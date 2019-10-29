@@ -137,9 +137,16 @@ Enter park name: <input type="text" name="ParkName"></b>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
   <script>
+		 var endpoint = "https://data.cityofchicago.org/resource/7piw-z6r6.json";
     $(document).ready(function() {
       $("#btnSearch").on("click", function() {
-        console.log("click");
+        $.get(endpoint, function(response){
+					$.each(response ,function(i, v){
+						var d = $("<div>");
+						d.text("Park: " + v.park + ", " + "Movie: " + v.title + ", " + "Date: " + v.date +  ", " + "Rating: " + v.rating);
+						$("#list").append(d);
+					});
+				});
       });
     });
   </script>
