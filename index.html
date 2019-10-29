@@ -38,6 +38,9 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
+          <a class="nav-link" href="#home">Search<span class="sr-only">(current)</span></a>
+        </li>
+				<li class="nav-item">
           <a class="nav-link" href="#home">List<span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
@@ -56,8 +59,8 @@
     <br>
     <br>
 
-Enter movie name: <input type="text" name="FirstName"><br>
-Enter park name: <input type="text" name="LastName"><br>
+Enter movie name: <input type="text" name="MovieName"><br>
+Enter park name: <input type="text" name="ParkName"><br>
 
 
     <label><input type="checkbox" name="sunday"> Sunday</label><br>
@@ -77,10 +80,6 @@ Enter park name: <input type="text" name="LastName"><br>
 
 		
   <div class="content" id="googlemaps">
-    Google Map:
-    <br>
-
-
     <h3>Movies in Parks Markers</h3>
     <!--The div element for the map -->
     <div id="map"></div>
