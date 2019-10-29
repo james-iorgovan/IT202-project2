@@ -21,7 +21,7 @@
 <body>
 	<!-- navigation bar -->
 	<nav class="navbar navbar-expand-lg navbar-light bg-light">
-		<a class="navbar-brand" href="#">Navbar</a>
+		<a class="navbar-brand" href="#">Movies in the Parks</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
     </button>
@@ -32,10 +32,7 @@
 				
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#screen2">Screen 2</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#screen3">Screen 3</a>
+        <a class="nav-link" href="#screen2">Google Maps</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#about">About</a>
@@ -46,19 +43,28 @@
 
   <!-- the content divs -->
   <div class="content" id="home">
-    Home page
+    Filter your preferences
 		<br>
+		<br>
+		
+	<select>
+  <option value="sunday">Sunday</option>
+  <option value="monday">Monday</option>
+  <option value="tuesday">Tuesday</option>
+  <option value="wednesday">Wednesday</option>
+	<option value="thursday">Thursday</option>
+  <option value="friday">Friday</option>
+  <option value="saturday">Saturday</option>
+</select>
+		
+		
+		
 		<!-- Material inline 1 -->
 <div class="form-check form-check-inline">
   <input type="checkbox" class="form-check-input" id="materialInline1">
-  <label class="form-check-label" for="materialInline1">1</label>
+  <label class="form-check-label" for="materialInline1">Upcoming movies</label>
 </div>
 
-<!-- Material inline 2 -->
-<div class="form-check form-check-inline">
-    <input type="checkbox" class="form-check-input" id="materialInline2">
-    <label class="form-check-label" for="materialInline2">2</label>
-</div>
 
 <!-- Material inline 3 -->
 <div class="form-check form-check-inline">
@@ -67,11 +73,7 @@
 </div>
   </div>
   <div class="content" id="screen2">
-    This is screen 2
-  </div>
-  <div class="content" id="screen3">
-    This is screen 3
-  </div>
+    Google Maps
   <div class="content" id="about">
     About 
   </div>
