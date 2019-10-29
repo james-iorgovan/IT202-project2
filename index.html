@@ -17,7 +17,7 @@
   <style>
     /* Set the size of the div element that contains the map */
     #map {
-      height: 700px;
+      height: 600px;
       /* The height is 400 pixels */
       width: 100%;
       /* The width is the width of the web page */
@@ -38,10 +38,10 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="#home">List<span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#googlemaps">Google Maps</a>	
+          <a class="nav-link" href="#googlemaps">Maps</a>	
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#about">About</a>
@@ -50,30 +50,32 @@
     </div>
   </nav>
 
-  <!-- the content divs -->
+  <!-- Filter preferences -->
   <div class="content" id="home">
     Filter your preferences
     <br>
     <br>
 
-    <select>
-      <option value="sunday">Sunday</option>
-      <option value="monday">Monday</option>
-      <option value="tuesday">Tuesday</option>
-      <option value="wednesday">Wednesday</option>
-      <option value="thursday">Thursday</option>
-      <option value="friday">Friday</option>
-      <option value="saturday">Saturday</option>
-    </select>
+Enter movie name: <input type="text" name="FirstName"><br>
+Enter park name: <input type="text" name="LastName"><br>
+
+
+    <label><input type="checkbox" name="sunday"> Sunday</label><br>
+    <label><input type="checkbox" name="monday"> Monday</label><br>
+    <label><input type="checkbox" name="tuesday"> Tuesday</label><br>
+    <label><input type="checkbox" name="wednesday"> Wednesday</label><br>
+    <label><input type="checkbox" name="thursday"> Thursday</label><br>
+    <label><input type="checkbox" name="friday"> Friday</label><br>
+    <label><input type="checkbox" name="saturday"> Saturday</label><br>
+		<label><input type="checkbox" name="upcomingmovies"> Upcoming Movies</label><br>
+		<input type="submit">
+		</div>
 
 
 
-    <!-- Material inline 1 -->
-    <div class="form-check form-check-inline">
-      <input type="checkbox" class="form-check-input" id="materialInline1">
-      <label class="form-check-label" for="materialInline1">Upcoming movies</label>
-    </div>
+<br><br>
 
+		
   <div class="content" id="googlemaps">
     Google Map:
     <br>
@@ -118,7 +120,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
 <div class="content" id="about">
-      <p>Test</p>
+	<h3>Meet the Creator of the App</h3>
+      <p>Hello! Welcome to my first app. This app will allow you (or at least should) to look up movies from a 
+				 database.<br> It let's you filter out days of the week, upcoming movies, enter in a specific movie or park name,<br> and 
+	 			 view it Google Maps. If you have any questions, feel free to reach out.</p>
     </div>
 
     <script>
