@@ -62,7 +62,7 @@
 
 
     <form>
-      <b>Enter movie name: <input type="text" name="MovieName"><br>
+      <b>Enter movie name: <input type="text" name="MovieName" id="MovieName"><br>
 Enter park name: <input type="text" name="ParkName"></b>
       <br>
 
@@ -139,8 +139,11 @@ Enter park name: <input type="text" name="ParkName"></b>
   <script>
 		 var endpoint = "https://data.cityofchicago.org/resource/7piw-z6r6.json";
     $(document).ready(function() {
-      $("#btnSearch").on("click", function() {
-        $.get(endpoint, function(response){
+      $("#btnSearch").on("click", function(e) {
+				e.preventDefault();
+				let title = $("#MovieName").val() // gives reference to object
+				let url = endpoint + "?title=" + title;
+        $.get(url, function(response){
 					$.each(response ,function(i, v){
 						var d = $("<div>");
 						d.text("Park: " + v.park + ", " + "Movie: " + v.title + ", " + "Date: " + v.date +  ", " + "Rating: " + v.rating);
